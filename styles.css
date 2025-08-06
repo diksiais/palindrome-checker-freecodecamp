@@ -1,0 +1,85 @@
+/* Base page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Intro title */
+#intro {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field */
+#text-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+#check-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#check-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Result message */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Description below */
+#description {
+  margin-top: 30px;
+  max-width: 600px;
+  font-size: 14px;
+  color: #555;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+/* Color feedback for result */
+#result.success {
+  color: #28a745; /* green */
+}
+
+#result.error {
+  color: #dc3545; /* red */
+}
+
+/* Fade animation */
+#result {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* When result is visible */
+#result.show {
+  opacity: 1;
+}
